@@ -204,6 +204,7 @@ function startTimerLine(time) {
         time += 1;
         time_line.style.width = time + "px";
         if (time > 10049) {
+            time_line.style.width = 0 + "px";
             clearInterval(counterLine);
         }
     }
