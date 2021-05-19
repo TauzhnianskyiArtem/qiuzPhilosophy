@@ -154,10 +154,11 @@ function showResult() {
     quiz_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 17) {
+    let length = questions.length;
+    if (userScore > (length / 1.2)) {
         let scoreTag = '<span><p>Поздравляю!!! 🎉, Ты правильно ответил на ' + userScore + ' из ' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
-    } else if (userScore > 8) {
+    } else if (userScore > (length / 2)) {
         let scoreTag = '<span><p>Хорошо 😎, Ты правильно ответил на ' + userScore + ' из ' + questions.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     } else {
