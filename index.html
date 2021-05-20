@@ -3,68 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Викторина по философии</title>
+    <title>Вікторина з філософії</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-<div class="start_btn"><button>Начать викторину</button></div>
+<div class="start_btn"><button>Почати вікторину</button></div>
 
 <div class="info_box">
-        <div class="info-title"><span>Тема:"Марксизм"</span><span>Правила викторины:</span></div>
-        <div class="info-list">
-            <div class="info">1. У вас будет всего <span>45</span> секунд на каждый вопрос.</div>
-            <div class="info">2. После того, как вы выберете свой ответ, его нельзя будет отменить.</div>
-            <div class="info">3. Вы не можете выбрать какой-либо вариант, когда время истечет.</div>
-            <div class="info">4. Вы не можете выйти из викторины во время игры.</div>
-        </div>
-        <div class="buttons">
-            <button class="quit">Выйти</button>
-            <button class="restart">Продолжить</button>
-        </div>
+    <div class="info-title"><span id="topic"></span><span>Правила вікторини:</span></div>
+    <div class="info-list">
+        <div class="info">1. У вас буде всього <span>45</span> секунд на кожне запитання.</div>
+        <div class="info">2. Після того, як ви оберете відповідь, її не можна буде скасувати.</div>
+        <div class="info">3. Ви не зможете обрати будь-яку відповідь, коли закінчиться час.</div>
+        <div class="info">4. Ви не можете вийти з вікторини під час гри.</div>
     </div>
+    <div class="buttons">
+        <button class="quit">Вийти</button>
+        <button class="restart">Продовжити</button>
+    </div>
+</div>
 
-    <div class="quiz_box">
-        <header>
-            <div class="title">Викторина</div>
-            <div class="timer">
-                <div class="time_left_txt">Время:</div>
-                <div class="timer_sec">45</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-            </div>
-            <img id="img" src="" hidden/>
-            <div class="option_list">
-
-            </div>
-        </section>
-
-
-        <footer>
-            <div class="total_que">
-            </div>
-            <button class="next_btn">Следующий</button>
-        </footer>
+<div class="quiz_box">
+    <header>
+        <div class="title">Вікторина</div>
+        <div class="timer">
+            <div class="time_left_txt">Час:</div>
+            <div class="timer_sec">45</div>
         </div>
+        <div class="time_line"></div>
+    </header>
+    <section>
+        <div class="que_text">
+        </div>
+        <img id="img" src="" hidden/>
+        <div class="option_list">
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="total_que">
+        </div>
+        <button class="next_btn">Наступне</button>
+    </footer>
+</div>
 
 <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">Вы завершили викторину!</div>
-        <div class="score_text">
-        </div>
-        <div class="buttons">
-            <button class="restart">Заново</button>
-            <button class="quit">Выйти</button>
-        </div>
+    <div class="icon">
+        <i class="fas fa-crown"></i>
     </div>
+    <div class="complete_text">Ви завершили вікторину!</div>
+    <div class="score_text">
+    </div>
+    <div class="buttons">
+        <button class="restart">Спочатку</button>
+        <button class="quit">Вийти</button>
+    </div>
+</div>
 
-    <script src="js/questions.js"></script>
-    <script src="js/script.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

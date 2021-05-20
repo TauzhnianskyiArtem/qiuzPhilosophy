@@ -9,6 +9,8 @@ const time_line = document.querySelector("header .time_line");
 const timeText = document.querySelector(".timer .time_left_txt");
 const timeCount = document.querySelector(".timer .timer_sec");
 
+const topicText = document.getElementById('topic');
+topicText.textContent = `Тема: "${topic}"`;
 
 start_btn.onclick = () => {
     info_box.classList.add("activeInfo");
